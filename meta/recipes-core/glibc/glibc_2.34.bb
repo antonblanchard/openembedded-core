@@ -58,6 +58,9 @@ SRC_URI =  "${GLIBC_GIT_URI};branch=${SRCBRANCH};name=glibc \
            file://0001-CVE-2021-38604.patch \
            file://0002-CVE-2021-38604.patch \
            file://0001-fix-create-thread-failed-in-unprivileged-process-BZ-.patch \
+           file://0001-powerpc64-Replace-some-PPC_FEATURE_HAS_VSX-with-PPC_.patch \
+           file://0002-powerpc64-Check-cacheline-size-before-using-optimise.patch \
+           file://0003-powerpc64-Add-checks-for-Altivec-and-VSX-in-ifunc-se.patch \
            "
 S = "${WORKDIR}/git"
 B = "${WORKDIR}/build-${TARGET_SYS}"
